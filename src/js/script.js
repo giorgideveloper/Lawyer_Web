@@ -87,7 +87,7 @@ for (let i = 0; i < solid.length; i++) {
     solid[5].style.width= '73%';
 }
 
-const static_number =  document.querySelector('.static_number');
+/* const static_number =  document.querySelector('.static_number');
 
 let num = 0;
  
@@ -111,7 +111,7 @@ function myFunction() {
   else{
     static_number.innerHTML="1" 
   }
-}
+} */
 
 /* section text speed*/
 /* let out = document.querySelector('.out'); */
