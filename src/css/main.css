@@ -144,6 +144,19 @@ body ul {
   color: #D4C291;
 }
 
+.carousel-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0d1f3b;
+  opacity: 0.5;
+  height: 85vh;
+}
+
 .carousel-item {
   height: 85vh;
 }
@@ -151,6 +164,7 @@ body ul {
 .carousel-item img {
   object-fit: cover;
   height: 100%;
+  z-index: 100;
 }
 
 .carousel-control-prev-icon {
@@ -216,6 +230,10 @@ body ul {
   border: 0;
   opacity: .5;
   transition: opacity .15s ease;
+}
+
+.my_carusel {
+  z-index: 999;
 }
 
 .my_carusel button {
