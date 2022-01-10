@@ -10,8 +10,10 @@
     <!-- css -->
     <link rel="stylesheet" href="./src/css/main.css">
     <!-- fonts -->
+    <link href="https://free.bboxtype.com/embedfonts/?family=FiraGO:400" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-arial-caps/css/bpg-arial-caps.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian&family=PT+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- animation -->
@@ -25,29 +27,70 @@
           <div class="wrapper-header__first-nav">
             <div class="container">
               <div class="row">
-                <div class="col-lg-12 w-100 d-flex justify-content-start colum_header"> 
-                  <div class="first-nav__location col-lg-6 col-md-4 ">
+                <div class="col-lg-6 col-lg-6 col-md-6 col-sm-6 col-xs-12  d-flex justify-content-start colum_header"> 
+                  <div class="first-nav__location ">
                     <div class="first-nav__location__icon d-flex">
                       <img src="./src/img/geo-alt 1.svg" alt="" srcset="">
                     <div class="first-nav__location__text d-flex">  120 farnavaz mefe , batumi</div>
                   </div>
               </div>
-              <div class=" w-100 d-flex justify-content-end ">
-                  <div class="first-nav__cntact colum_header d-flex ">
-                    <div class="first-nav__cntact__phone "><img src="./src/img/Telephone.svg" alt=""> <span>557555555</span></div>
-                    <div class="first-nav__cntact__clock"><img src="./src/img/Clock.svg" alt=""><span>9AM-PM</span></div>
-                    <div class="first-nav__cntact__faq"><a href="#page-1">უფასო კონსუტაცია</a></div>
-                  </div>
-                </div>
             </div>
-                  
+            <div class="col-lg-6 col-md-5 col-sm-6 col-xs-12 d-flex justify-content-end colum_phone">
+              <div class=" d-flex ">
+                <div class="first-nav__cntact__phone "><img src="./src/img/Telephone.svg" alt=""> <span>557555555</span></div>
+                <div class="first-nav__cntact__clock"><img src="./src/img/Clock.svg" alt=""><span>9AM-PM</span></div>
+              </div>
+            </div>
               </div>
               <div class="row">
                   <div class="col-md-12">
                     <div class="nav-solid"></div>
                   </div>
               </div>
-              <div class="row">
+              <div class="row menu__row">
+                <div class="col-xl-12">
+                  <nav class="navbar navbar-expand-lg ">
+                    <div class="container-fluid menu-right">
+                      <span>Lawyer.com</span>
+                    <!--   <a class="navbar-brand" href="#"><img src="./src/img/lomi5.png" alt=""></a> -->
+                      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="./index.html">მთავარი</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="./index4.html">მომსახურება</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="./index2.html">სიახლეები</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="./index8.html">ჩვენს შესახებ</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="./index6.html">ხელშეკრულების ნიმუშები</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="./index7.html">კონტაქტი</a>
+                            </li>
+                          </ul>
+                          <div class="first-nav__cntact__faq"><a href="#page-1">უფასო კონსუტაცია</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+              <!-- <div class="row">
                 <div class="wrapper-header__navbar ">
                   <nav class="navbar navbar-expand-lg ">
                     <div class="container-fluid">
@@ -60,7 +103,7 @@
                         </ul>
                         <ul class="navbar-nav  navbar_title">
                           <li class="nav-item">
-                            <a class="nav-link" href="#">მთავარი</a>
+                            <a class="nav-link" href="i">მთავარი</a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="./index4.html">მომსახურება</a>
@@ -82,7 +125,7 @@
                     </div>
                   </nav>
                 </div>  
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -96,38 +139,39 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./src/img/img2.jpg" class="d-block w-100" alt="...">
+                <img src="http://www.legalaid.ge/photos/1/a box of photos/22222_copy.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption  d-md-block my_carusel">
-                  <p>The Most Talented Law Frim</p>
                   <h1>შედეგი სიტყვებზე მეტია</h1>
-                    <a href=""> <button>Contact Us Now</button></a>
+                  <p>საოჯახო სამართლიდან გამომდინარე</p>
+                  
+                    <a href=""> <button>სრულად ნახვა</button></a>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="./src/img/slider1.jpg" class="d-block w-100" alt="...">
+                <img src="http://www.legalaid.ge/photos/1/a box of photos/daxmareba_arasrulwlovantatvis_copy.jpg" class="d-block w-100" alt="...">
+                <div class="mm">
                 <div class="carousel-caption  d-md-block my_carusel">
-                  <p>The Most Talented Law Frim</p>
-                  <h1>We Fight For Your Justice<br>
-                    As Like A Friend.</h1>
-                    <a href=""> <button>Contact Us Now</button></a>
+                  <h1>შედეგი სიტყვებზე მეტია</h1>
+                  <p>საოჯახო სამართლიდან გამომდინარე</p>
+                    <a href=""> <button>სრულად ნახვა</button></a>
                 </div>
               </div>
+              </div>
               <div class="carousel-item">
-                <img src="./src/img/slider1.jpg" class="d-block w-100" alt="...">
+                <img src="http://www.legalaid.ge/photos/1/a box of photos/ojaxSi_Zaladoba_copy.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption  d-md-block flex my_carusel">
-                  <p>The Most Talented Law Frim</p>
-                  <h1>We Fight For Your Justice<br>
-                    As Like A Friend.</h1>
-                    <a href=""> <button>Contact Us Now</button></a>
+                  <h1>შედეგი სიტყვებზე მეტია</h1>
+                  <p>საოჯახო სამართლიდან გამომდინარე</p>
+                    <a href=""> <button>სრულად ნახვა</button></a>
                 </div>
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
               <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
@@ -139,7 +183,7 @@
             <div class="row">
               <div class="col-xl-6 col-lg-6 col-md-6" ><div class="section_why__img"><img src="./src/img/why.jpg" class="w-100" alt=""></div></div>
               <div class="col-xl-4 col-lg-6 col-md-6 right-side" data-aos="fade-left" data-aos-duration="700" data-aos-offset="300">
-                  <div class="section_why__title"><span class="fw-bold">WHY</span> CHOOSE US ?</div>
+                  <div class="section_why__title">რატომ ჩვენ?</div>
                   <div class="section_why__solid"></div>
                   <div class="section_why__block item">
                     
@@ -147,11 +191,11 @@
                   <div class="section_why__block_description">Established sed fact will that sed tracted by sed the readable of a when looking when layout finish on time.</div>
                 </div>
                   <div class="section_why__block item">
-                    <div class="section_why__block_title fw-bold">ჩვენ  Error</div>
+                    <div class="section_why__block_title fw-bold">ჩვენი რჩევა წარმატების საწინდარია </div>
                     <div class="section_why__block_description">Established sed fact will that sed tracted by sed the readable of a when looking when layout finish on time.</div>
                   </div>
                     <div class="section_why__block item">
-                      <div class="section_why__block_title fw-bold">წარმატება ჩვენი თანმდევია                       </div>
+                      <div class="section_why__block_title fw-bold">დამოუკიდებლობა და მიუკერძოებლობა</div>
                     <div class="section_why__block_description">Established sed fact will that sed tracted by sed the readable of a when looking when layout finish on time.</div>
               </div>
           </div>
@@ -186,9 +230,9 @@
             </div>
           </div>
             <div class="row justify-content-center">
-              <div class="col-12 col-md-5 col-lg-4 ">
+              <div class="col-12 col-md-6 col-lg-4 ">
               <div class="area_practice__block">
-                <div class="area_practice__logo"><img src="./src/img/w1.jpg" alt=""></div>
+                <div class="area_practice__logo"><a href="./index6.html"><img src="./src/img/CUT2.jpg" alt=""></a></div>
                 <div class="area_practice__titledes">საოჯახო სამართალი</div>
                 <div class="area_practice__solid"></div>
                 <div class="area_practice__description">it is a log estabished fact that a 
@@ -197,9 +241,9 @@
               </div>
             </div>
             
-            <div class="col-12 col-md-5 col-lg-4 ">
+            <div class="col-12 col-md-6 col-lg-4 ">
               <div class="area_practice__block">
-                <div class="area_practice__logo"><img src="./src/img/w2.jpg" alt=""></div>
+                <div class="area_practice__logo"><img src="./src/img/ones.jpeg.jpg" alt=""></div>
                 <div class="area_practice__titledes">სამეწარმეო სამართალი</div>
                 <div class="area_practice__solid "></div>
                 <div class="area_practice__description">it is a log estabished fact that a 
@@ -207,7 +251,7 @@
                   readble content of </div>
               </div>
             </div>
-            <div class="col-12 col-md-5 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4">
               <div class="area_practice__block">
                 <div class="area_practice__logo"><img src="./src/img/w3.jpg" alt=""></div>
                 <div class="area_practice__titledes">სისხლის სამართალი</div>
@@ -217,7 +261,7 @@
                   readble content of </div>
               </div>
             </div>
-            <div class="col-12 col-md-5 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4">
               <div class="area_practice__block">
                 <div class="area_practice__logo"><img src="./src/img/w4.jpg" alt=""></div>
                 <div class="area_practice__titledes">ადმინისტრიციული სამართალი</div>
@@ -227,7 +271,7 @@
                   readble content of </div>
               </div>
             </div>
-            <div class="col-12 col-md-5 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4">
               <div class="area_practice__block">
                 <div class="area_practice__logo"><img src="./src/img/w5.jpg" alt=""></div>
                 <div class="area_practice__titledes">შრომის სამართალი</div>
@@ -237,7 +281,7 @@
                   readble content of </div>
               </div>
             </div>
-            <div class="col-12 col-md-5 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4">
               <div class="area_practice__block">
                 <div class="area_practice__logo"><img src="./src/img/w6.jpg" alt=""></div>
                 <div class="area_practice__titledes">საერთაშორისო სამართალი</div>
@@ -251,160 +295,155 @@
             </div>
             </div>
       </section>
-           <section class="consulting" >
-            <div class="container" >
-              <div class="row">
-                <div class="col-md-5">
-                  <div class="consulting__block">
-                    <p>For Our Honorabe Clients</p>
-                    <p>Free Consulting</p>
-                    <p>Call us 24/7 at (888)123-4567 or fill out the form.</p>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less able English.</p>
-                  </div>
-                </div>
-                <div class="col-md-7" >
-                  <div class="consulting__inputs ">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <form>
-                      <div class="mb-3">
-                        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
-                      </div>
-                    </div>
-                    <div class="col-md-6"><div class="mb-3">
-                      <input type="Phone" class="form-control" id="exampleFormControlInput1" placeholder="Phone">
-                    </div></div>
-                    <div class="col-md-12"><div class="mb-3">
-                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                    </div></div>
-                    <div class="col-md-12">
-                      <div class="mb-3">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      </div>
-                      <div class="col-lg-12 col-md-6 col-sm-12 col-12 d-flex offset-lg-6 offset-md-6   form_submit"><button type="button" class="btn send btn-outline-secondary w-50">შეტყობინების გაგზავნა</button></div>
-                    </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <section class="consulting" >
+        <div class="container" >
+          <div class="row">
+            <div class="col-md-5">
+              <div class="consulting__block">
+                <p>For Our Honorabe Clients</p>
+                <p>უფასო კონსულტაცია</p>
+                <p>Call us 24/7 at (888)123-4567 or fill out the form.</p>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less able English.</p>
               </div>
             </div>
-           </section>
-           <section class="news">
-            <div class="container" data-aos="fade-up" data-aos-duration="700" data-aos-offset="200">
+            <div class="col-md-7" >
+              <div class="consulting__inputs ">
               <div class="row">
+                <div class="col-md-6">
+                  <form>
+                  <div class="mb-3">
+                    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="სახელი">
+                  </div>
+                </div>
+                <div class="col-md-6"><div class="mb-3">
+                  <input type="Phone" class="form-control" id="exampleFormControlInput1" placeholder="ტელეფონი">
+                </div></div>
+                <div class="col-md-12"><div class="mb-3">
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ელექტრონული ფოსტა">
+                </div></div>
                 <div class="col-md-12">
-                  <div class="news__title">
-                    <p>Our Export</p>
-                    <p><span class="fw-bold">LATEST</span> NEWS</p>
-                    <p>Thear are many variations of passages of  Lorem Ipsum avaliable, but the majority have</p>
+                  <div class="mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="შეიყვანეთ შეტყობინება" rows="3"></textarea>
                   </div>
-                </div>
-              </div>
-                <div class="news__block">
-                  <div class="row">
-                    <div class="col-md-4"><div class="card" style="width: 100%;">
-                      <a href="./index2.html" class="card-link">
-                      <img src="./src/img/news.jpg" class="card-img-top" alt="...">
-                    </a>
-                      <div class="card-body">
-                        <h5 class="card-title">Nothing can be gain without any working hard</h5>
-                      </div>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item cl"> <span><i class="fas fa-clock"></i> <span> Jan 12,2021</span></span><span> <span class="p-1"></span><i class="fas fa-folder-open"></i>  <span> Category</span></span></li>
-                      </ul>
-                      <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="./index2.html" class="card-link">Continue Reading</a>
-                      </div>
-                    </div></div>
-                    <div class="col-md-4"><div class="card" style="width: 100%;">
-                      <a href="#" class="card-link">
-                      <img src="./src/img/news.jpg" class="card-img-top" alt="...">
-                    </a>
-                      <div class="card-body">
-                        <h5 class="card-title">Nothing can be gain without any working hard</h5>
-                      </div>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item cl"> <span><i class="fas fa-clock"></i> <span> Jan 12,2021</span></span><span> <span class="p-1"></span><i class="fas fa-folder-open"></i>  <span> Category</span></span></li>
-                      </ul>
-                      <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-link">Continue Reading</a>
-                      </div>
-                    </div></div>
-                    <div class="col-md-4"><div class="card" style="width: 100%;">
-                      <a href="#" class="card-link">
-                      <img src="./src/img/news.jpg" class="card-img-top" alt="...">
-                        </a>
-                      <div class="card-body">
-                        <h5 class="card-title">Nothing can be gain without any working hard</h5>
-                      </div>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item cl"> <span><i class="fas fa-clock"></i> <span> Jan 12,2021</span></span><span> <span class="p-1"></span><i class="fas fa-folder-open"></i>  <span> Category</span></span></li>
-                      </ul>
-                      <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-link">Continue Reading</a>
-                      </div>
-                    </div></div>
-                  </div>
-                </div>
-            </div>
-           </section>
-          <footer class="footer">
-            <div class="container">
-              <div class="row">
-                <div class=" col-12 col-md-3">
-                  <div class="footer__block logo"><img src="./src/img/lomi4.png" alt=""> </div>
-                </div>
-                <div class="col-12 col-md-3">
-                  <div class="footer__block">
-                    <h3>Quick Link</h3>
-                    <p>Home</p>
-                    <p>Practice Area</p>
-                    <p>Our Team</p>
-                    <p>Recent Case</p>
-                    <p>Our Blog</p>
-                  </div>
-                </div>
-                <div class="col-12 col-md-3">
-                  <div class="footer__block">
-                    <h3>Quick Link</h3>
-                    <p>Home</p>
-                    <p>Practice Area</p>
-                    <p>Our Team</p>
-                    <p>Recent Case</p>
-                    <p>Our Blog</p>
-                  </div>
-                </div>
-                <div class="col-12 col-md-3">
-                  <div class="footer__block">
-                    <h3>Quick Link</h3>
-                    <p>Home</p>
-                    <p>Practice Area</p>
-                    <p>Our Team</p>
-                    <p>Recent Case</p>
-                    <p>Our Blog</p>
-                  </div>
+                  <div class=" d-flex justify-content-end  form_submit"><button type="button" class="btn send btn-outline-secondary w-50">შეტყობინების გაგზავნა</button></div>
+                </form>
                 </div>
               </div>
             </div>
-            <div class="nav-solid f"></div>
-            <div class="container"> 
+          </div>
+          </div>
+        </div>
+       </section>
+       <section class="news">
+        <div class="container" data-aos="fade-up" data-aos-duration="700" data-aos-offset="200">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="news__title">
+                <p>Our Export</p>
+                <p>ბოლო სიახლეები</p>
+                <p>Thear are many variations of passages of  Lorem Ipsum avaliable, but the majority have</p>
+              </div>
+            </div>
+          </div>
+            <div class="news__block">
               <div class="row">
-                <div class="col-md-12">
-              <span class="footer__right ">Created By Lumos</span>
+                <div class="col-md-4"><div class="card" style="width: 100%;">
+                  <a href="./index2.html" class="card-link">
+                  <img src="./src/img/news.jpg" class="card-img-top" alt="...">
+                </a>
+                  <div class="card-body">
+                    <h5 class="card-title">2021 კანონში შეცვლილი ცვლილებები</h5>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item cl"> <span><i class="fas fa-clock"></i> <span> სექ 12,2021</span></span><span> <span class="p-1"></span><i class="fas fa-folder-open"></i>  <span> საერთაშორისო</span></span></li>
+                  </ul>
+                  <div class="card-body">
+                    <p class="card-text">საოჯახო სამართლიდან გამომდინარე დავები საკმაოდ მრავალფეროვანია და ისინი მოიცავს შემდეგ საკითხებს:</p>
+                    <a href="./index2.html" class="card-link">სრულად ნახვა</a>
+                  </div>
+                </div></div>
+                <div class="col-md-4"><div class="card" style="width: 100%;">
+                  <a href="#" class="card-link">
+                  <img src="./src/img/news.jpg" class="card-img-top" alt="...">
+                </a>
+                  <div class="card-body">
+                    <h5 class="card-title">სამოქალაქო სამართლის სიახლეები</h5>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item cl"> <span><i class="fas fa-clock"></i> <span> ნოვ 12,2021</span></span><span> <span class="p-1"></span><i class="fas fa-folder-open"></i>  <span> სამოქალაქო</span></span></li>
+                  </ul>
+                  <div class="card-body">
+                    <p class="card-text">საოჯახო სამართლიდან გამომდინარე დავები საკმაოდ მრავალფეროვანია და ისინი მოიცავს შემდეგ საკითხებს:</p>
+                    <a href="#" class="card-link">სრულად ნახვა</a>
+                  </div>
+                </div></div>
+                <div class="col-md-4"><div class="card" style="width: 100%;">
+                  <a href="#" class="card-link">
+                  <img src="./src/img/news.jpg" class="card-img-top" alt="...">
+                    </a>
+                  <div class="card-body">
+                    <h5 class="card-title">საკანომდებლო ბაზაში დაგეგმილი ცვლილებები</h5>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item cl"> <span><i class="fas fa-clock"></i> <span> ოქტ 12,2021</span></span><span> <span class="p-1"></span><i class="fas fa-folder-open"></i>  <span> კატეგორია</span></span></li>
+                  </ul>
+                  <div class="card-body">
+                    <p class="card-text">საოჯახო სამართლიდან გამომდინარე დავები საკმაოდ მრავალფეროვანია და ისინი მოიცავს შემდეგ საკითხებს:</p>
+                    <a href="#" class="card-link">სრულად ნახვა</a>
+                  </div>
+                </div></div>
+              </div>
             </div>
+        </div>
+       </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class=" col-12 col-md-3">
+              <div class="footer__block logo"><img src="./src/img/lomi4.png" alt=""> </div>
             </div>
+            <div class="col-12 col-md-3">
+              <div class="footer__block">
+                <h3>Quick Link</h3>
+                <p>Home</p>
+                <p>Practice Area</p>
+                <p>Our Team</p>
+                <p>Recent Case</p>
+                <p>Our Blog</p>
+              </div>
             </div>
-          </footer>
-      </section>
-
-
-
-     
-
+            <div class="col-12 col-md-3">
+              <div class="footer__block">
+                <h3>Quick Link</h3>
+                <p>Home</p>
+                <p>Practice Area</p>
+                <p>Our Team</p>
+                <p>Recent Case</p>
+                <p>Our Blog</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="footer__block">
+                <h3>Quick Link</h3>
+                <p>Home</p>
+                <p>Practice Area</p>
+                <p>Our Team</p>
+                <p>Recent Case</p>
+                <p>Our Blog</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-solid f"></div>
+        <div class="container"> 
+          <div class="row">
+            <div class="col-md-12">
+          <span class="footer__right ">Created By Lumos</span>
+        </div>
+        </div>
+        </div>
+      </footer>
+  </section>
     <!-- js -->
     <script src="./src/js/script.js"></script>
     <!-- animation -->
@@ -420,5 +459,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
+
+  
   </body>
 </html>

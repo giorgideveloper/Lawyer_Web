@@ -28,7 +28,7 @@ let icon = document.querySelector('.faq_section_icon');
 for (let i = 0; i < p.length; i++){
     if(col[i].ariaExpanded == "true"){
         col[i].innerHTML = `<i class="fas fa-minus-square"></i>`;
-        p[i].style.color = "#fc694c";
+        p[i].style.color = "#f94c";
        
     }else {
         col[i].innerHTML = `<i class="fas fa-plus-square"></i>`;
@@ -37,7 +37,7 @@ for (let i = 0; i < p.length; i++){
         p[i].addEventListener('click', function(){
             if(col[i].ariaExpanded == "true"){
             col[i].innerHTML = `<i class="fas fa-minus-square"></i>`;
-            p[i].style.color = "#fc694c";
+            p[i].style.color = "#f94c";
            
         }else {
             col[i].innerHTML = `<i class="fas fa-plus-square"></i>`;
@@ -47,7 +47,7 @@ for (let i = 0; i < p.length; i++){
         col[i].addEventListener('click', function(){
             if(col[i].ariaExpanded == "true"){
                 col[i].innerHTML = `<i class="fas fa-minus-square"></i>`;
-                p[i].style.color = "#fc694c";
+                p[i].style.color = "#f94c";
             }else {
                 col[i].innerHTML = `<i class="fas fa-plus-square"></i>`;
                 p[i].style.color = "";
@@ -87,31 +87,24 @@ for (let i = 0; i < solid.length; i++) {
     solid[5].style.width= '73%';
 }
 
-/* const static_number =  document.querySelector('.static_number');
+const static_number =  document.querySelector('.static_number');
 
 let num = 0;
  
 function myStatic(){
     num += 1;
     //console.log(num)
-    static_number.innerHTML = num + "%";
-    if( num > 98){
+    static_number.innerHTML = num ;
+    if( num > 149){
         return num;
     }
     setTimeout(myStatic, 20)
 }
 
 
-window.onscroll = function() {myFunction()};
-
-function myFunction() {
-  if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-    myStatic();
-  }
-  else{
-    static_number.innerHTML="1" 
-  }
-} */
+/* window.onscroll = function() {myFunction()};
+myStatic();
+ */
 
 /* section text speed*/
 /* let out = document.querySelector('.out'); */
