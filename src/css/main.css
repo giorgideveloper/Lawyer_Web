@@ -164,7 +164,7 @@ body ul {
 .carousel-item img {
   object-fit: cover;
   height: 100%;
-  z-index: 100;
+  z-index: 98;
 }
 
 .carousel-control-prev-icon {
@@ -233,7 +233,7 @@ body ul {
 }
 
 .my_carusel {
-  z-index: 999;
+  z-index: 98;
 }
 
 .my_carusel button {
@@ -1429,6 +1429,7 @@ input[data-state="invalid"] {
 .offcanvas-body {
   text-align: center;
   background-color: #272C3F;
+  z-index: 99;
 }
 
 /*  .container-fluid {

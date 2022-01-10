@@ -153,7 +153,7 @@ text-align: center;
  .carousel-item img{
     object-fit: cover;
     height:100%;
-    z-index: 100;
+    z-index: 98;
  }
 
  .carousel-control-prev-icon{
@@ -217,7 +217,7 @@ text-align: center;
     transition: opacity .15s ease;
 }
 .my_carusel{
-  z-index: 999;
+  z-index: 98;
     button{
        
         background:  $primary-color;
@@ -1363,11 +1363,13 @@ a{
 }
 .offcanvas-header{
     background-color: $primary-background;
+    
 
 }
 .offcanvas-body {
     text-align: center;
     background-color: $primary-background;
+    z-index: 99;
 }
 
 /*  .container-fluid {
