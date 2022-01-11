@@ -24,6 +24,33 @@ body{
     
     font-family: my;
 }
+.text-reset{
+    color: #fff !important;
+}
+
+.first-nav__location{
+    font-size: 14px;
+    font-family: my;
+}
+.colum_phone{
+    font-family: my;
+    font-size: 14px;
+}
+.len{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    width: 20px;
+    height: 20px;
+}
+.len img{
+
+}
+.len span{
+    font-family: my;
+    font-size: 14px;
+    padding-right: 0.5em;
+}
 $primary-color: #D4C291;
 //D4C291;
 //#fc694c;
@@ -448,7 +475,7 @@ text-align: center;
     
             font-style: normal;
             font-weight: bold;
-            font-size: 36px;
+            font-size: 27px;
         }
     }
     &__block{
@@ -460,6 +487,7 @@ text-align: center;
         font-weight: bold;
         font-size: 23px;
         line-height: 130.19%;
+        text-align: left;
     }
     &__solid{
         margin-top: 6px;
@@ -492,13 +520,13 @@ text-align: center;
         margin-top: 30px;
         padding-top: -40px;
     }
-    &__block p:nth-child(1){
+    &__block p:nth-child(2){
         color: $primary-color;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
     }
-    &__block p:nth-child(2){
+    &__block p:nth-child(1){
         color: #fff;
         
         font-style: normal;
@@ -507,7 +535,7 @@ text-align: center;
     }
     &__block p:nth-child(3){
         font-style: normal;
-        font-weight: bold;
+        text-align: left;
         font-size: 16px;
         line-height: 78.69%;
         color: $primary-color;
@@ -557,17 +585,19 @@ text-align: center;
     }
     &__title p:nth-child(1){
 
+        
         font-style: normal;
         font-weight: bold;
-        font-size: 18px;
-        color: $primary-color;
+        font-size: 27px;
+        color: #000000;
+        font-family: my;
     }
     &__title p:nth-child(2){
 
         font-style: normal;
-        font-weight: normal;
-        font-size: 36px;
-        color: #000000;
+        font-weight: bold;
+        font-size: 18px;
+        color: #D4C291;
     }
     &__title p:nth-child(3){
         color: rgba(0, 0, 0, 0.42);
@@ -583,7 +613,10 @@ text-align: center;
 
 }
 .news__title{
-    font-family: my;
+    font-family: m
+    
+    
+    ;
 }
 .footer{
 
@@ -673,7 +706,7 @@ body::-webkit-scrollbar {
     .area_practice__description {
         padding-bottom: 3em;
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
       .area_practice__block{
           text-align: center;
@@ -752,8 +785,9 @@ body::-webkit-scrollbar {
      padding-top: 0em; 
      text-align: justify;
     }
-    .consulting__block p:nth-child(2) {
-       font-size: 34px;
+    .consulting__block p:nth-child(1) {
+        text-align: center;
+       font-size: 27px;
        }
     .consulting {
 
@@ -891,7 +925,7 @@ body::-webkit-scrollbar {
         border-bottom: 1px solid #ddd;
     }
     .cetagoryWrap ul li a {
-        font-size: 15px;
+        font-size: 17px;
         font-family: my;
         color: #333;
         display: block;
@@ -977,13 +1011,27 @@ body::-webkit-scrollbar {
         right: 0.4em;
     } 
 }
+
 @media (min-width: 768px){
     .menu-right span:nth-child(1){
+        display: none;
+    }
+    .len_offcanvas{
         display: none;
     }
 }
 
 @media (max-width:768px){
+    .len{
+        display: none;
+    }
+    .len_offcanvas{
+        margin-top: 2em;
+        font-size: 18px;
+    }
+    .len_offcanvas img{
+        margin-top: -0.2em;
+    }
     .colum_header{
         justify-content: center !important;
     }
@@ -1024,13 +1072,16 @@ body::-webkit-scrollbar {
         margin-top: 1em;
     }
     .my_header h3{
-        font-size: 26px !important;
+        font-size: 22px !important;
     }
     .my_header{
         height: 160px;
     }
     .my_header__block {
         height: 164px;
+        color: #fff !important;
+        font-weight: 700;
+      
     }
     
 }
@@ -1058,6 +1109,7 @@ body::-webkit-scrollbar {
     }
     .first-nav__location__text{
         margin-left: 0.5em;
+
     }
 }
 .faq_section_text{
